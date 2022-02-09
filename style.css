@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+:root{
+    --minion-yellow:#FCE029;
+    --denim-blue:#2243b6;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* main navbar */
+
+.main-navbar{
+    background-color: var(--denim-blue);
+    height:12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+   
+}
+
+.left-nav{
+    width:20rem;
+    margin-left:1rem;
+    text-align: center;
+    color:var(--minion-yellow);
+}
+
+.left-nav img{
+    width:100%;
+}
+
+
+
+
+
+.right-nav{
+    display: flex;
+    margin-right:4rem;
+    
+}
+
+.navicon-color{
+    color:white;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    color:var(--denim-blue);
+    background-color: var(--minion-yellow);
+    font-weight: 800;
+    margin-right: 3rem;
+    border: 2px solid  var(--denim-blue);
+}
+
+.basic-input-textboxes{
+    margin-right: 5rem;
+   
+}
+
+
+
+.inp-btn{
+    width:60rem;
+    height:4rem;
+    background-color: white;
+}
+.btns:hover{
+    opacity: 0.9 ;
+}
+
+
+.badge-no-of-message{
+    background-color: var(--minion-yellow);
+    color:var(--denim-blue);
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1150px){
+
+    .left-nav{
+        width:15rem;
+    }
+
+    .inp-btn{
+        width:20rem;
+        height:4rem;
+        background-color: white;
+    }
+    
+
+    .navicon-color{
+        color:white;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    .basic-input-textboxes{
+        margin-right: 1rem;
+       
+    }
+
+
+}
+
+
+@media only screen and (max-width:640px)
+{
+
+    .left-nav{
+        width:0;
+        visibility: hidden;
+    }
+
+
+    .btn-secondary{
+        margin-right: 1rem;
+       
+    }
+
+}
+
+
